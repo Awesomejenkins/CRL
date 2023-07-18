@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/*CSS reset*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+/*Custom variables*/
+:root{
+    /*font-family*/
+    --ff-bio: 'BioRhyme', serif;
+    --ff-M: 'Montserrat', sans-serif;
+    --ff-OS: 'Open Sans', sans-serif;
+    /*font weight*/
+    --fw-L: 100;
+    --fw-M: 400;
+    --fw-B: 700;
+    /*padding/margin*/
+    --spacer-xs: .5rem 0;
+    --spacer-s: 1rem 0;
+    --spacer-m: 2rem 0;
+    --spacer-l: 4rem 0;
+    /*colors*/
+    --color-platinum: #D3D4D9;
+    --color-airforceblue: #4B88A2;
+    --color-eggplant: #6C464F;
+    --color-bittersweet: #ED6A5A;
+    --color-richblack: #0D1B1E;
+    --button-color: #F0F0C9;
+}
+
+/*typography*/
+html{
+    line-height: 1.6;
+    height: 100%;
+}
+body{
+    font-family: var(--ff-M);
+    min-height: 100%;
+
+}
+img{
+    width: 100%;
+}
+
+h1{
+    font-family: var(--ff-bio);
+    color: var(--color-platinum);
+}
+
+h2,
+h3,
+h4,
+h5{
+    font-family: var(--ff-OS);
+    color: var(--color-bittersweet);
+}
+
+
+.container{
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+
