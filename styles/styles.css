@@ -7,15 +7,13 @@
     align-items: center;
     text-align: center;
     padding: var(--spacer-m);
-
-
 }
 
 .nav {
     visibility: hidden;
     height: 0;
     position: absolute;
-
+    width: 100%;
 }
 
 .nav--visible {
@@ -23,10 +21,21 @@
     height: auto;
     position: relative;
 }
-.nav__toggle{
-    position: absolute;
+.nav-toggle {
+     cursor: pointer;
+     border: 0;
+     width: 3em;
+     height: 3em;
+     padding: 0;
+     background: transparent;
+     transition: opacity 1000ms ease-in-out;
 
 }
+
+.logo{
+    height: 30px;
+}
+
 .primary--navigation{
     margin-bottom: 2em;
 }
@@ -43,6 +52,7 @@
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
 }
 .nav__link:hover,
 .nav__link:focus{
@@ -63,6 +73,7 @@
 
 /*hero*/
 .hero{
+    margin: 8rem 0 0 0;
     padding-bottom: 2.5em;
     background: var(--color-airforceblue);
 
@@ -215,21 +226,26 @@
 
 @media (min-width: 700px) {
     .navigation--container{
+        display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
     }
     .nav__dropdown {
         display: none;
     }
     .nav{
         visibility: visible;
+
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        width: 70%;
+
+
+        width: 90%;
         height: auto;
         position: relative;
+
+
     }
     .nav__item{
         margin-left: 20px;
@@ -237,8 +253,12 @@
     .nav__list{
         display: flex;
     }
-    .secondary--navigation{
+    .primary--navigation{
         margin-left: auto;
+    }
+
+    .hero{
+        margin: 6rem 0 0 0;
     }
     .hero__title {
         max-width: 90%;
